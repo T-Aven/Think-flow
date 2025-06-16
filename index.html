@@ -1,148 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thinkflow – Focus Planners</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>Thinkflow by T. Aven</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0; padding: 0; box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
     body {
-      background-color: #f4f6f8;
-      color: #1e1e1e;
-      line-height: 1.6;
-      padding: 20px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdfcf9;
+      color: #222;
+      text-align: center;
     }
 
     header {
-      text-align: center;
-      margin-bottom: 30px;
+      background-color: #edf6f9;
+      padding: 40px 20px 20px;
     }
 
-    .logo {
-      width: 180px;
-      margin-bottom: 10px;
+    header img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.2rem;
       margin: 10px 0;
-      color: #333;
+      color: #006d77;
     }
 
-    p.tagline {
+    p {
       font-size: 1.1rem;
-      color: #666;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      margin-top: 40px;
-    }
-
-    .product {
-      background-color: white;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      text-align: center;
-    }
-
-    .product img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
-
-    .product h3 {
-      font-size: 1.2rem;
-      margin-bottom: 8px;
-    }
-
-    .product p {
-      font-size: 0.95rem;
       color: #555;
+      max-width: 600px;
+      margin: 10px auto 30px;
     }
 
-    .product a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #7867bf;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
+    .chart {
+      margin: 40px auto;
+      max-width: 90%;
     }
 
-    .product a:hover {
-      background-color: #6552ac;
+    .chart img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     footer {
-      text-align: center;
-      margin-top: 60px;
+      margin-top: 40px;
+      padding: 20px;
       font-size: 0.9rem;
-      color: #888;
+      background-color: #f1f1f1;
+      color: #555;
     }
 
-    .social {
+    a.button {
+      display: inline-block;
       margin-top: 10px;
-    }
-
-    .social a {
-      color: #7867bf;
+      background-color: #83c5be;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
       text-decoration: none;
+      font-weight: 500;
+      transition: background-color 0.3s ease;
     }
 
-    @media screen and (max-width: 600px) {
-      h1 { font-size: 1.6rem; }
-      .product h3 { font-size: 1.1rem; }
-      .product p { font-size: 0.85rem; }
+    a.button:hover {
+      background-color: #5ca9a0;
+    }
+
+    .instagram {
+      margin-top: 15px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="assets/logo.png" alt="logo ThinkFlow" class="logo" />
-    <h1>Unlock Your Mind with Thinkflow</h1>
-    <p class="tagline">Plan. Focus. Achieve.</p>
+    <img src="assets/logo ThinkFlow" alt="Thinkflow Logo.png">
+    <h1>Unlock Your Focus with Thinkflow</h1>
+    <p>Plan your month with intention. Discover the difference between Free, Basic, and Premium planners.</p>
+    <a class="button" href="https://aventom.gumroad.com" target="_blank">View Planners on Gumroad</a>
+
+    <div class="instagram">
+      <p>Follow us on Instagram:  
+        <a href="https://instagram.com/twoj_konto" target="_blank">@aven.tom</a>
+      </p>
+    </div>
   </header>
 
-  <section class="products">
-    <div class="product">
-      <img src="assets/Free_Weekly_Focus_Planner_by_Thinkflow" alt="Free Planner">
-      <h3>Free 1-Week Focus Planner</h3>
-      <p>Start planning today with our simple, effective weekly layout – free forever.</p>
-      <a href="https://aventom.gumroad.com/l/yjuba" target="_blank">Get for Free</a>
-    </div>
-    <div class="product">
-      <img src="assets/weekly_basic_mockup.png" alt="4-Week Planner">
-      <h3>4-Week Focus Planner</h3>
-      <p>Boost your momentum with this structured, aesthetic 4-week system.</p>
-      <a href="https://aventom.gumroad.com/l/yccnu" target="_blank">Buy Now</a>
-    </div>
-    <div class="product">
-      <img src="assets/weekly_premium_mockup.png" alt="12-Week Planner">
-      <h3>12-Week Focus Planner</h3>
-      <p>Go all in – 3 months of focus, clarity and consistent progress.</p>
-      <a href="https://aventom.gumroad.com/l/tyvaw" target="_blank">Buy Now</a>
-    </div>
+  <section class="chart">
+    <img src="assets/tabela planerow.png" alt="Comparison of Planner Versions">
   </section>
 
   <footer>
-    © 2025 Thinkflow by T. Aven · All rights reserved.
-    <div class="social">
-      Follow on Instagram: <a href="https://instagram.com/aventom.pl" target="_blank">@aventom.pl</a>
-    </div>
+    © 2025 Thinkflow by T. Aven. All rights reserved.
   </footer>
+
 </body>
 </html>
